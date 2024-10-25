@@ -9,19 +9,19 @@ importers:
   .:
     dependencies:
       '@astrojs/check':
-        specifier: ^0.9.4
+        specifier: 0.9.4
         version: 0.9.4(typescript@5.6.3)
       '@astrojs/tailwind':
-        specifier: ^5.1.2
+        specifier: 5.1.2
         version: 5.1.2(astro@4.16.7(rollup@4.24.0)(typescript@5.6.3))(tailwindcss@3.4.13)
       astro:
-        specifier: ^4.16.7
+        specifier: 4.16.7
         version: 4.16.7(rollup@4.24.0)(typescript@5.6.3)
       tailwindcss:
-        specifier: ^3.4.13
+        specifier: 3.4.13
         version: 3.4.13
       typescript:
-        specifier: ^5.6.3
+        specifier: 5.6.3
         version: 5.6.3
 
 packages:
