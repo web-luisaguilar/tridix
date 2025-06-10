@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: var(--font-poppins);
+}
+
+:root {
+  --color-primary: #e62e30;
+  --color-surface: #a2d5d0;
+  --color-on-surface: #682774;
+  --color-secondary: #f9b116;
+  --color-surface-light: #fdedea;
+}
+html {
+  font-family: 'nunito', sans-serif;
+  background: var(--color-surface-light);
+  color: black;
+}
+*,
+*:after,
+*::before {
+  box-sizing: border-box;
+}
+img {
+  max-width: none;
+}

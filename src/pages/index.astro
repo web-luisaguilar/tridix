@@ -14,7 +14,7 @@ const products = [
 
 ---
 
-<Layout title="TriDix">
+<Layout title="Tridix">
   
 	<main class="!mb-8">
     <div id="modal" class="hidden bg-black/80 fixed top-0 left-0 w-screen h-screen z-40 ease-in-out">
@@ -22,11 +22,11 @@ const products = [
         <img id="img-modal" class="w-auto h-full" src={''} alt={''}>
       </section>
     </div>
-    <section class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <section class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
       {products.map((product,index)=>
-      <button id="btn-card" data-index={index} class="flex rounded-xl overflow-hidden shadow-lg hover:shadow-xl relative  aspect-[9/16] min-w-42 justify-center">
+      <button id="btn-card" data-index={index} class=" cursor-pointer group/card rounded-xl overflow-hidden shadow-lg hover:shadow-xl relative  aspect-[9/16] min-w-42 justify-center flex">
           <img class='duration-200  h-full w-auto hover:scale-110' src={product.src} alt={product.description} title={product.description}>
-          <h3 class='bg-[var(--color-primary)] text-white flex justify-center py-4 capitalize font-bold text-base absolute bottom-0 left-0 right-0 opacity-80'>{product.description}</h3>
+          <h3 class=' group/title opacity-0 group-hover/card:opacity-80  bg-[var(--color-primary)] text-[var(--color-surface-light)] flex justify-center py-4 capitalize font-bold text-base absolute bottom-0 left-0 right-0 transition-opacity duration-200'>{product.description}</h3>
       </button>
         )}
     </section>
